@@ -58,7 +58,7 @@
     		<%
                 if (Session["guest_name"] != null)
                 {
-                    string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password=sa123;";
+                    string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
                     int count = 1;
                     MySqlDataReader md;
                     MySqlDataReader md1;
@@ -268,7 +268,7 @@
             document.getElementById("value").value = add;
             document.getElementById("bill").value = add;
             document.getElementById("items_buy").value = item_count;
-            document.getElementById("date").value = date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+            document.getElementById("date").value = date.getDate() + "/" + (Integer.parseInt(date.getMonth()) + 1) + "/" + date.getFullYear();
             console.log(add);
             console.log(item_table);
             localStorage.setItem("item_table", JSON.stringify(item_table));

@@ -13,7 +13,7 @@
 
     <%
 
-        string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password=sa123;";
+        string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
         int count = 1;
         int id = Convert.ToInt32(Request.QueryString["id"]);
 

@@ -10,6 +10,9 @@
 </head>
 <body>
     <%
+            string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
+        MySqlDataReader md;
+        MySqlConnection sqlcon;
         
             Response.Write(Request.Form["menu_item"]);
             sqlcon = new MySqlConnection(connstr);

@@ -12,7 +12,7 @@ namespace Dynamic_Shop_Application.views
 {
     public partial class customize_GUI : System.Web.UI.Page
     {
-        static string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password=sa123;";
+        static string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
         MySqlConnection sqlcon;
         protected void Page_Load(object sender, EventArgs e)
         {

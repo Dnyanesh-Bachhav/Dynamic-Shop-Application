@@ -15,7 +15,7 @@
 	<%
         if(Session["guest_name"] != null)
         { 
-        string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password=sa123;";
+        string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
 
         MySqlDataReader md1;
         string shop_name = "";

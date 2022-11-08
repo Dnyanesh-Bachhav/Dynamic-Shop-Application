@@ -60,7 +60,7 @@
                 if(Session["admin_name"] != null)
                 { 
 
-                string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password=sa123;";
+                string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
                 int count = 1;
                 MySqlDataReader md;
                 MySqlDataReader md1;

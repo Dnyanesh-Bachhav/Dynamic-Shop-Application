@@ -14,7 +14,7 @@
     <%
         if(Session["admin_name"] != null)
         { 
-        string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password=sa123;";
+        string connstr = @"Server=localhost;Database=Dynamic_Shop;Uid=root;Password='';";
 
         string shop_name = "";
         string slogan = "";
@@ -58,7 +58,7 @@
             <input type="text" class="form-control" name="slogan" id="slogan">
         </div>
         <div class="mb-3">
-            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click1" />
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click1" CssClass="btn btn-primary" />
         </div>
     </form>
     
